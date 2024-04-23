@@ -1,7 +1,16 @@
 <!-- @format -->
 
-{% extends 'baselayout\layout.html' %} {% load static %} {% block content2 %}
+{% extends 'baselayout\layout.html' %}
 
+<!-- bloque de header -->
+
+{% load static %} {% block headercontent %}
+
+<link rel="stylesheet" href="{%static 'index.css' %}" />
 <title>Bienvenido</title>
 
-{% endblock %} {% block content %} {% endblock %}
+{% endblock %}{% block pagecontent %}
+
+<h1>Hola</h1>
+
+{% endblock %}
